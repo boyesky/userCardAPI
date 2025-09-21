@@ -1,0 +1,27 @@
+.UC {
+  text-align: center;
+}
+#cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.names {
+  display: flex;
+  gap: 10px;
+}
+.figs {
+  display: flex;
+  gap: 5px;
+}
+.figs2 {
+  display: flex;
+  gap: 20px;
+}
+.UserCard {
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  text-align: center;
+}

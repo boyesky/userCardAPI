@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USER CARD</title>
+    <link rel="stylesheet" href="usercardapi.css" />
+  </head>
+  <body>
+    <h1 class="UC">User Card</h1>
+    <div id="cardContainer"></div>
+    <script>
+      const container = document.querySelector("#cardContainer");
+      const fetchUserCard = () => {
+        fetch("https://dummyjson.com/users")
+          .then((res) => res.json())
+          .then((data) => {
+            userCard = data.users;
+            // console.log(data.users);
+
+            userCard.forEach((c) => {
+              const userEl = document.createElement("div");
+              userEl.classList.add("UserCard");
+
+              userEl.innerHTML = `<img src=${c.image}>
+              <div class="names"><p>${c.firstName}</p>
+              <p>${c.lastName}</p></div>
+              <div class="figs"><p>${c.age}</p>
+              <p>${c.gender}</p>
+              <p>${c.birthDate}</p></div>
+              <div class="figs2"><p>${c.height}cm</p>
+              <p>${c.weight}kg</p></div>
+              
+              `;
+
+              container.appendChild(userEl);
+            });
+          })
+          .catch((err) => console.error(err));
+      };
+      fetchUserCard();
+
+      // const fetchUserCard = async () => {
+      //   try {
+      //     const response = await fetch("https://dummyjson.com/users");
+      //     const data = await response.json();
+      //     console.log(data);
+      //   } catch (err) {
+      //     console.error("error", err);
+      //   }
+      // };
+      // fetchUserCard();
+    </script>
+  </body>
+</html>
+
+<!-- https://dummyjson.com/users -->
