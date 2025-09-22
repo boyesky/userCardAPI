@@ -3,25 +3,43 @@
 }
 #cardContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
+  /* height: 200px; */
 }
-.names {
-  display: flex;
-  gap: 10px;
-}
-.figs {
-  display: flex;
-  gap: 5px;
-}
-.figs2 {
-  display: flex;
-  gap: 20px;
-}
+
 .UserCard {
-  border: 1px solid #ddd;
-  display: flex;
-  flex-direction: column;
-  padding: 10px 20px;
+  /* display: flex;
+  flex-direction: row; */
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 12px;
+  /* text-align: center; */
+}
+.UserCard img {
+  display: block;
+  margin: auto;
+  border: 1px solid rgb(184, 148, 69);
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
+}
+.name {
   text-align: center;
+  margin: 15px 0px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(118, 117, 117);
+  font-size: 13px;
+  margin-top: -10px;
+}
+.last {
+  text-align: center;
+  font-size: 13px;
+  color: rgb(118, 117, 117);
 }

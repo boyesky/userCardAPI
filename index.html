@@ -23,15 +23,13 @@
               userEl.classList.add("UserCard");
 
               userEl.innerHTML = `<img src=${c.image}>
-              <div class="names"><p>${c.firstName}</p>
-              <p>${c.lastName}</p></div>
-              <div class="figs"><p>${c.age}</p>
-              <p>${c.gender}</p>
-              <p>${c.birthDate}</p></div>
-              <div class="figs2"><p>${c.height}cm</p>
-              <p>${c.weight}kg</p></div>
-              
-              `;
+              <div class="name">${c.firstName}
+                ${c.lastName}</div>
+              <div class="info">${c.age}
+              ${c.gender}
+            ${c.birthDate}</div>
+              <div class="last">${c.height}cm
+                    ${c.weight}kg</div>`;
 
               container.appendChild(userEl);
             });
@@ -55,3 +53,10 @@
 </html>
 
 <!-- https://dummyjson.com/users -->
+
+<!-- <div class="figs">
+              
+              
+              
+              <div class="figs2"><p></p>
+              <p></p></div> -->
