@@ -1,29 +1,64 @@
+body {
+  background: rgb(189, 139, 188);
+}
+
 .UC {
   text-align: center;
+  color: whitesmoke;
 }
 #cardContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
-  /* height: 200px; */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
 }
 
 .UserCard {
-  /* display: flex;
-  flex-direction: row; */
+  display: flex;
   border: 2px solid #ddd;
   border-radius: 4px;
-  padding: 10px 12px;
-  /* text-align: center; */
 }
-.UserCard img {
-  display: block;
-  margin: auto;
+.left-side {
+  flex: 35%;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+  background: rgb(35, 97, 92);
+}
+.left-side img {
   border: 1px solid rgb(184, 148, 69);
-  border-radius: 5px;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin: 20px 10px;
 }
+.right-side {
+  flex: 65%;
+  background: rgb(90, 110, 14);
+  border-radius: 0 4px 4px 0;
+}
+.right-side div {
+  font-weight: bolder;
+  color: #ddd;
+  font-size: 25px;
+  margin-bottom: 6px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.right-side p {
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+  padding: 3px;
+}
+.right-side p span {
+  padding: 0 2px;
+  color: rgb(175, 173, 173);
+}
+
+/* 
+
+  
+
 .name {
   text-align: center;
   margin: 15px 0px;
@@ -42,4 +77,4 @@
   text-align: center;
   font-size: 13px;
   color: rgb(118, 117, 117);
-}
+} */

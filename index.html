@@ -22,14 +22,18 @@
               const userEl = document.createElement("div");
               userEl.classList.add("UserCard");
 
-              userEl.innerHTML = `<img src=${c.image}>
-              <div class="name">${c.firstName}
-                ${c.lastName}</div>
-              <div class="info">${c.age}
-              ${c.gender}
-            ${c.birthDate}</div>
-              <div class="last">${c.height}cm
-                    ${c.weight}kg</div>`;
+              userEl.innerHTML = `<div class="left-side"><img src=${c.image}></div>
+             <div class="right-side">
+             <div><span>${c.firstName}</span>
+              <span>${c.lastName}</span></div>
+              <p><span> ${c.age}</span>
+              <span> ${c.gender}</span>
+              <span> ${c.eyeColor}</span></p>
+             <p> <span>${c.height}cm</span>
+              <span>${c.weight}kg</span>
+              <span>${c.bloodGroup}</span></p>
+              <p><span>${c.email}</span></p>
+              </div>`;
 
               container.appendChild(userEl);
             });
@@ -54,9 +58,10 @@
 
 <!-- https://dummyjson.com/users -->
 
-<!-- <div class="figs">
-              
-              
-              
-              <div class="figs2"><p></p>
-              <p></p></div> -->
+<!-- <div class="name">
+                </div>
+              <div class="info">
+             
+            ${c.birthDate}</div>
+              <div class="last">
+                    </div> -->
