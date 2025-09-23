@@ -4,7 +4,7 @@ body {
 
 .UC {
   text-align: center;
-  color: whitesmoke;
+  color: rgba(245, 245, 245, 0.779);
 }
 #cardContainer {
   display: grid;
@@ -16,6 +16,11 @@ body {
   display: flex;
   border: 2px solid #ddd;
   border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+.UserCard:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }
 .left-side {
   flex: 35%;
@@ -25,8 +30,8 @@ body {
 }
 .left-side img {
   border: 1px solid rgb(184, 148, 69);
-  height: 70px;
-  width: 70px;
+  height: 85px;
+  width: 85px;
   border-radius: 50%;
   margin: 20px 10px;
 }
@@ -39,7 +44,7 @@ body {
   font-weight: bolder;
   color: #ddd;
   font-size: 25px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   text-align: center;
   padding-top: 15px;
 }
@@ -48,7 +53,7 @@ body {
   margin: 0;
   font-size: 13px;
   text-align: center;
-  padding: 3px;
+  padding: 2px;
 }
 .right-side p span {
   padding: 0 2px;
