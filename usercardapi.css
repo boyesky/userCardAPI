@@ -44,16 +44,15 @@ body {
   font-weight: bolder;
   color: #ddd;
   font-size: 25px;
-  margin-bottom: 4px;
+  margin: 10px 0 5px 0;
   text-align: center;
-  padding-top: 15px;
 }
 
 .right-side p {
   margin: 0;
   font-size: 13px;
   text-align: center;
-  padding: 2px;
+  padding: 1px;
 }
 .right-side p span {
   padding: 0 2px;
